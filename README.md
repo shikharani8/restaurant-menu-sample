@@ -12,3 +12,5 @@ How to use run this project.
 5. Click on Enquiry tab in header.
 6. You will land on Enquiry form
 7. Fill all the required fields and submit to send your enquiry
+
+DB: Enquiry data is being stored in firebase realtime database.
