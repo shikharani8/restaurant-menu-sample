@@ -106,11 +106,11 @@ class Menu extends Component {
                                 alt="Generic placeholder image"
                               />
                               <div class="media-body">
-                                <h5 class="mt-0">{data.name}</h5>
+                                <h5 class="mt-0 w-75">{data.name}</h5>
                               </div>
                               <div>
                                 <h5 class="mt-0 float-right mr-2">
-                                  {data.prices.price.price} £
+                                £{data.prices.price.price}
                                 </h5>
                               </div>
                             </div>
@@ -164,9 +164,9 @@ class Menu extends Component {
                                 <small class="text-muted">Ingredients</small>
                                 <ul>
                                   <small>
-                                    <li>Vegetarian: {data.vegetarian}</li>
-                                    <li>Vegan: {data.vegan}</li>
-                                    <li>Dairy free: {data.dairyfree}</li>
+                                    <li>Vegetarian : {data.vegetarian}</li>
+                                    <li>Vegan : {data.vegan}</li>
+                                    <li>Dairy free : {data.dairyfree}</li>
                                   </small>
                                   <small>
                                     <a
@@ -278,26 +278,26 @@ class Menu extends Component {
               <ul>
                 {Object.keys (selectedItem).length > 0 &&
                   <small>
-                    <li>Vegetarian: {selectedItem.vegetarian}</li>
-                    <li>Vegan: {selectedItem.vegan}</li>
-                    <li>Dairy free: {selectedItem.dairyfree}</li>
-                    <li>Gluten free: {selectedItem.glutenfree}</li>
-                    <li>Halal: {selectedItem.halal}</li>
-                    <li>Pregnant: {selectedItem.pregnant}</li>
-                    <li>Wheat: {selectedItem.wheat}</li>
-                    <li>Crustaceans: {selectedItem.crustaceans}</li>
-                    <li>Eggs: {selectedItem.eggs}</li>
-                    <li>Fish: {selectedItem.fish}</li>
-                    <li>Peanuts: {selectedItem.peanuts}</li>
-                    <li>Soybeans: {selectedItem.soybeans}</li>
-                    <li>Milk: {selectedItem.milk}</li>
-                    <li>Nuts: {selectedItem.nuts}</li>
-                    <li>Celery: {selectedItem.celery}</li>
-                    <li>Mustard: {selectedItem.mustard}</li>
-                    <li>Sesame: {selectedItem.sesame}</li>
-                    <li>Sulphur Dioxide: {selectedItem.sulphurDioxide}</li>
-                    <li>Lupin: {selectedItem.lupin}</li>
-                    <li>Molluscs: {selectedItem.molluscs}</li>
+                    <li>Vegetarian : {selectedItem.vegetarian}</li>
+                    <li>Vegan : {selectedItem.vegan}</li>
+                    <li>Dairy free : {selectedItem.dairyfree}</li>
+                    <li>Gluten free : {selectedItem.glutenfree}</li>
+                    <li>Halal : {selectedItem.halal}</li>
+                    <li>Pregnant : {selectedItem.pregnant}</li>
+                    <li>Wheat : {selectedItem.wheat}</li>
+                    <li>Crustaceans : {selectedItem.crustaceans}</li>
+                    <li>Eggs : {selectedItem.eggs}</li>
+                    <li>Fish : {selectedItem.fish}</li>
+                    <li>Peanuts : {selectedItem.peanuts}</li>
+                    <li>Soybeans : {selectedItem.soybeans}</li>
+                    <li>Milk : {selectedItem.milk}</li>
+                    <li>Nuts : {selectedItem.nuts}</li>
+                    <li>Celery : {selectedItem.celery}</li>
+                    <li>Mustard : {selectedItem.mustard}</li>
+                    <li>Sesame : {selectedItem.sesame}</li>
+                    <li>Sulphur Dioxide : {selectedItem.sulphurDioxide}</li>
+                    <li>Lupin : {selectedItem.lupin}</li>
+                    <li>Molluscs : {selectedItem.molluscs}</li>
                   </small>}
               </ul>
             </div>
