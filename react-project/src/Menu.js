@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import axios from 'axios';
-import Loading from './Loading';
 import {menuUrl} from './Config';
 import Header from './Header';
 import './App.css';
@@ -13,13 +12,11 @@ class Menu extends Component {
     this.state = {
       menuCategories: [],
       catgryWiseData: {},
-      loading: false,
       qty: 1,
     };
   }
 
   componentDidMount () {
-    this.setState ({loading: true});
     axios (menuUrl)
       .then (resp => {
         if (
@@ -45,11 +42,9 @@ class Menu extends Component {
           this.setState ({
             menuCategories: Object.values (uniqueCatgryObj),
             catgryWiseData: catgryWiseData,
-            loading: false,
           });
         }
       })
-      .finally (this.setState ({loading: false}));
   }
 
   handleChange = e => {
@@ -83,12 +78,9 @@ class Menu extends Component {
   };
 
   render () {
-    const {menuCategories, catgryWiseData, loading} = this.state;
-    // const menuCategories = ['abc', 'def'];
+    const {menuCategories, catgryWiseData} = this.state;
     return (
       <div class="divbody">
-        {/* {loading ? <Loading message="Please wait page is loading..." /> : 
-        <div> */}
         <Header />
         {menuCategories.map ((menuCategory, idx) => {
           return (

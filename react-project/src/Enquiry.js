@@ -70,7 +70,7 @@ class Enquiry extends Component {
         this.setState({messageError:''});
     }
 
-    return userNameError || companyError || emailError || messageError;
+    return userNameError && companyError && emailError && messageError;
    }
 
   submitForm = (e)=>{

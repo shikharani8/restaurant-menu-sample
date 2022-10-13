@@ -1,27 +1,15 @@
 .divbody {
     background-color: rgba(0, 128, 0, 0.20)
-        /* opacity: 0.6 */
-}
-
-.backImagecss {
-    background-image: url(./assets/enquiry.jpg);
-    /* width:100%;
-    height:100%;
-    object-fit: fill; */
 }
 
 .container {
-    /* position: absolute; */
-    /* right: 0; */
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     max-width: 60%;
-    /* height: 100%; */
     padding: 2%;
-    /* background-color: white; */
   }
 
-.boxsize {
-    max-width:5px
-}  
+  a:hover {
+    cursor:pointer;
+   }

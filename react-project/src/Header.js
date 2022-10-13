@@ -9,20 +9,6 @@ const Header = (props) => {
         {navItems.map (item => {
           return (
             <li class="nav-item active">
-              {/* {item.subMenu
-                ? <>
-                <div
-                    class="btn btn-dark dropdown-toggle"
-                    type="button"
-                    aria-haspopup="menu"
-                  >
-                    {item.title}
-                  </div>
-                <Menu
-                  menuCategories={menuCategories}
-                />
-                </>
-                : <a class="btn btn-dark" href={item.path}>{item.title}</a>} */}
                 <a class="btn btn-dark" href={item.path}>{item.title}</a>
             </li>
           );
