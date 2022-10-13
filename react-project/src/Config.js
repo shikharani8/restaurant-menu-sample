@@ -13,6 +13,6 @@ export const navItems = [
   }
 ];
 
-export const menuUrl = 'https://dev.menu.ninja/api/menu/156?key=8j5vfe%24*pfb**rzt&pretty=1';
+export const menuUrl = 'http://dev.menu.ninja/api/menu/156?key=8j5vfe%24*pfb**rzt&pretty=1';
 
 export const serverUrl = 'http://ec2-34-194-172-50.compute-1.amazonaws.com:4000';
