@@ -128,7 +128,7 @@ class Enquiry extends Component {
               name="userName"
               value={this.state.userName}
               onChange={e=>this.handleChange(e)}
-              placeholder="Enter userName"
+              placeholder="Enter User Name"
             />
             <small class="form-text text-danger">
               {this.state.userNameError}
@@ -144,14 +144,14 @@ class Enquiry extends Component {
               name="company"
               value={this.state.company}
               onChange={e=>this.handleChange(e)}
-              placeholder="Enter company"
+              placeholder="Enter Company"
             />
             <small class="form-text text-danger">
               {this.state.companyError}
             </small>
                </div>
           <div class="form-group">
-            <label for="email">Email address</label>
+            <label for="email">Email Address</label>
             <input
               type="text"
               class="form-control"
@@ -160,7 +160,7 @@ class Enquiry extends Component {
               name="email"
               value={this.state.email}
               onChange={e=>this.handleChange(e)}
-              placeholder="Enter email"
+              placeholder="Enter Email"
             />
             <small class="form-text text-danger">
               {this.state.emailError}
@@ -176,7 +176,7 @@ class Enquiry extends Component {
               name="message"
               value={this.state.message}
               onChange={e=>this.handleChange(e)}
-              placeholder="Enter your message"
+              placeholder="Enter Your Message"
             />
               <small class="form-text text-danger">
               {this.state.messageError}

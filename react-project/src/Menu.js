@@ -51,6 +51,10 @@ class Menu extends Component {
     // console.log()
   };
 
+  capitalizeFirstLetter = str => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+
   setActiveTab = (e, itemData) => {
     selectedItem = this.state.catgryWiseData[itemData.type.name].filter (
       elm => elm.id == itemData.id
@@ -189,7 +193,7 @@ class Menu extends Component {
                                       return (
                                         <li>
                                           <small>
-                                            {key}
+                                            {this.capitalizeFirstLetter(key)}
                                             {' '}
                                             :
                                             {' '}
@@ -243,7 +247,7 @@ class Menu extends Component {
                       return (
                         <li>
                           <small>
-                            {key}
+                            {this.capitalizeFirstLetter(key)}
                             {' '}
                             :
                             {' '}
@@ -304,5 +308,4 @@ class Menu extends Component {
     );
   }
 }
-
 export default Menu;
