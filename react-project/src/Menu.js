@@ -266,7 +266,7 @@ class Menu extends Component {
         >
           <Modal.Header class="bg-success">
             <Modal.Title>
-              <small>Nutritions{' '}</small>
+              <small>Ingredients{' '}</small>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
